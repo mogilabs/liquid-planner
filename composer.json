@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Mogilabs\\LiquidPlanner\\": "src/LiquidPlanner/"
+      "Mogilabs\\LiquidPlanner\\": "src/"
     }
   }
 }
