@@ -11,9 +11,9 @@ namespace Mogilabs\LiquidPlanner;
 return array(
     'liquidplanner' => array(
         'baseUrl' => 'https://app.liquidplanner.com/api/',
-        'workspaceId' => null,
-        'username' => '__LIQUID_PLANNER_LOGIN_EMAIL__',
-        'password' => '__LIQUID_PLANNER_LOGIN_PASSWORD__',
+        //'workspaceId' => '__LIQUID_PLANNER_WORKSPACE_ID__',
+        //'username' => '__LIQUID_PLANNER_LOGIN_EMAIL__',
+        //'password' => '__LIQUID_PLANNER_LOGIN_PASSWORD__',
     ),
     'service_manager' => array(
         'factories' => array(

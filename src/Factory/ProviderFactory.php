@@ -8,24 +8,24 @@
 
 namespace Mogilabs\LiquidPlanner\Factory;
 
-use Interop\Container\ContainerInterface;
+use Mogilabs\LiquidPlanner\Provider\Provider;
 use Zend\Config\Config;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ProviderFactory implements FactoryInterface
 {
     /**
      * Get the liquid planner provider
      *
-     * @param ContainerInterface $container
-     * @param string $requestedName
-     * @param array|null $options
-     * @return mixed
+     * @param ServiceLocatorInterface $serviceLocator
+     * @return Provider
      */
-    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
+    public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $config = $container->get('Config');
+        $config = $serviceLocator->get('Config');
         $lpConfig = new Config($config['liquidplanner']);
-        return new $requestedName($lpConfig);
+        $provider = new Provider($lpConfig);
+        return $provider;
     }
 }
