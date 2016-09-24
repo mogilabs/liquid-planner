@@ -3,6 +3,11 @@
   "description": "Liquid Planner web service provider",
   "minimum-stability": "stable",
   "license": "proprietary",
+  "keywords": [
+    "zf2",
+    "liquid planner",
+    "liquid planner provider"
+  ],
   "authors": [
     {
       "name": "Seth Daugherty",
