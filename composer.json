@@ -15,10 +15,10 @@
     }
   ],
   "require": {
-    "guzzlehttp/guzzle": "6.2.1",
-    "zendframework/zend-modulemanager": "~2.5.0",
-    "zendframework/zend-servicemanager": "~2.5.0",
-    "zendframework/zend-config": "~2.5.0"
+    "guzzlehttp/guzzle": "^6.2",
+    "zendframework/zend-modulemanager": "~2.5",
+    "zendframework/zend-servicemanager": "~2.5",
+    "zendframework/zend-config": "~2.5"
   },
   "autoload": {
     "psr-4": {
