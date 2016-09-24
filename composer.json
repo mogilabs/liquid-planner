@@ -1,0 +1,22 @@
+{
+  "name": "mogilabs/ml-liquidplanner",
+  "description": "Liquid Planner web service provider",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Seth Daugherty",
+      "email": "easyfreeze@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.2.1",
+    "zendframework/zend-modulemanager": "2.7.2",
+    "zendframework/zend-servicemanager": "3.1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mogilabs\\LiquidPlanner\\": "src/LiquidPlanner/"
+    }
+  }
+}
