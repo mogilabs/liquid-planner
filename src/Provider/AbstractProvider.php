@@ -16,7 +16,7 @@ use Zend\Config\Config;
  * Class AbstractProvider
  * @package Mogilabs\LiquidPlanner\Provider
  */
-class AbstractProvider
+abstract class AbstractProvider
 {
     /**
      * @var string The Liquid Planner API Base URL
