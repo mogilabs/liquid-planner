@@ -41,4 +41,11 @@ interface ProviderInterface
      * @return array The members of the workspace
      */
     public function getMembers();
+
+    /**
+     * Get LiquidPlanner API response for an input URL path. Workspace is assumed.
+     * @param string $urlTail
+     * @return array from JSON response
+     */
+    public function getApiResponse($urlTail);
 }

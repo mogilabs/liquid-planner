@@ -50,4 +50,14 @@ class Provider extends AbstractProvider implements ProviderInterface
     {
         return json_decode($this->client->get("workspaces/{$this->getWorkspaceId()}/members")->getBody());
     }
+
+    /**
+     * Get LiquidPlanner API response for an input URL path. Workspace is assumed.
+     * @param string $urlTail
+     * @return array from JSON response
+     */
+    public function getApiResponse($urlTail)
+    {
+        return json_decode($this->client->get("workspaces/{$this->getWorkspaceId()}/".$urlTail)->getBody());
+    }
 }
